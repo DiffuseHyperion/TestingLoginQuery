@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "testingloginquery",
+  "version": "${version}",
+  "name": "TestingLoginQuery",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/DiffuseHyperion/TestingLoginQuery"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/testingloginquery/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.diffusehyperion.testingloginquery.client.TestingLoginQueryClient"
+    ],
+    "server": [
+      "me.diffusehyperion.testingloginquery.server.TestingLoginQueryServer"
+    ]
+  },
+  "mixins": [
+    "testingloginquery.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
